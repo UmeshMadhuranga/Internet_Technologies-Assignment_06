@@ -30,22 +30,33 @@
             background-color: #badbcc;
         }
 
+        main {
+            /*position: relative;*/
+
+            display: flex;
+            flex-direction: column;
+
+            /*background-color: #5c636a;*/
+        }
+
         header>nav>div>div>ul {
             position: absolute;
             right: 0;
         }
 
         main>section>h3 {
+            background-color: #0dcaf0;
             text-align: center;
             font-weight: bold;
         }
 
         main>section:first-child {
-            width: 700px;
+            width: 60vw;
 
-            /*background-color: #0dcaf0;*/
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
-            border: 1px solid;
+            border: 2px solid #5c636a;
+            border-radius: 10px;
             padding: 10px;
 
             position: absolute;
@@ -71,6 +82,26 @@
 
         main>section:first-child>form>div>div>button {
             border-radius: 30px;
+        }
+
+        main>section:nth-child(2) {
+            width: 65vw;
+
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+            border: 2px solid #523e02;
+
+            padding: 10px 10px 10px;
+
+            position: absolute;
+            top: 575px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        main>section:nth-child(2)>table>thead>tr>th {
+            background-color: #8BD8A1;
         }
 
     </style>
@@ -157,6 +188,64 @@
             </div>
 
         </form>
+
+    </section>
+
+    <section>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Contact</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">C001</th>
+                <td>Kamal</td>
+                <td>Colombo</td>
+                <td>0771234567</td>
+            </tr>
+            <tr>
+                <th scope="row">C002</th>
+                <td>name</td>
+                <td>address</td>
+                <td>contact</td>
+            </tr>
+            <tr>
+                <th scope="row">C003</th>
+                <td>name</td>
+                <td>address</td>
+                <td>contact</td>
+            </tr>
+            <tr>
+                <th scope="row">C004</th>
+                <td>name</td>
+                <td>address</td>
+                <td>contact</td>
+            </tr>
+            <tr>
+                <th scope="row">C005</th>
+                <td>name</td>
+                <td>address</td>
+                <td>contact</td>
+            </tr>
+            <tr>
+                <th scope="row">C006</th>
+                <td>name</td>
+                <td>address</td>
+                <td>contact</td>
+            </tr>
+<!--            <tr>-->
+<!--                <th scope="row">3</th>-->
+<!--                <td colspan="2">Larry the Bird</td>-->
+<!--                <td>@twitter</td>-->
+<!--            </tr>-->
+            </tbody>
+        </table>
 
     </section>
 
